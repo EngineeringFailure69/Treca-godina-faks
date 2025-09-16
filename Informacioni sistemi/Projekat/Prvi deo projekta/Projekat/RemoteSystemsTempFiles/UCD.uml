@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_s7C8AHsjEe6PPoG5KEy0yw" name="model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_sPbEwHsmEe6PPoG5KEy0yw" name="Kupac"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_xmpBEHsmEe6PPoG5KEy0yw" name="Nacin kupovine"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2ggTAHsmEe6PPoG5KEy0yw" name="A_kupac_nacin kupovine" memberEnd="_2ggTAXsmEe6PPoG5KEy0yw _2ggTBHsmEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2ggTAXsmEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_2ggTAHsmEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ggTAnsmEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ggTA3smEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2ggTBHsmEe6PPoG5KEy0yw" name="nacin kupovine" type="_xmpBEHsmEe6PPoG5KEy0yw" association="_2ggTAHsmEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ggTBXsmEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ggTBnsmEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4ncxYHsmEe6PPoG5KEy0yw" name="Kupovina uzivo">
+    <generalization xmi:type="uml:Generalization" xmi:id="_69-j4HsmEe6PPoG5KEy0yw" general="_xmpBEHsmEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HxsG8HsnEe6PPoG5KEy0yw" name="Ponuda">
+    <include xmi:type="uml:Include" xmi:id="_lNTQYHsnEe6PPoG5KEy0yw" addition="_4ncxYHsmEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_UtM7IHsnEe6PPoG5KEy0yw" name="Prodavac"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_h27xgHsnEe6PPoG5KEy0yw" name="A_prodavac_ponuda" memberEnd="_h27xgXsnEe6PPoG5KEy0yw _h27xhHsnEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h27xgXsnEe6PPoG5KEy0yw" name="prodavac" type="_UtM7IHsnEe6PPoG5KEy0yw" association="_h27xgHsnEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h27xgnsnEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h27xg3snEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h27xhHsnEe6PPoG5KEy0yw" name="ponuda" type="_HxsG8HsnEe6PPoG5KEy0yw" association="_h27xgHsnEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h27xhXsnEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h27xhnsnEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qxpCsHsnEe6PPoG5KEy0yw" name="Neadekvatna ponuda">
+    <generalization xmi:type="uml:Generalization" xmi:id="_w8T1MHsnEe6PPoG5KEy0yw" general="_HxsG8HsnEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_s_VCQHsnEe6PPoG5KEy0yw" name="Adekvatna ponuda">
+    <generalization xmi:type="uml:Generalization" xmi:id="_xmL4oHsnEe6PPoG5KEy0yw" general="_HxsG8HsnEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ERzDMHsoEe6PPoG5KEy0yw" name="Neuspesna kupovina">
+    <include xmi:type="uml:Include" xmi:id="_LS3SMHsoEe6PPoG5KEy0yw" addition="_qxpCsHsnEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_81u2EHsuEe6PPoG5KEy0yw" addition="_1FAEsHsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZKE5oHsoEe6PPoG5KEy0yw" name="Razgovor sa kupcem o ponudama">
+    <include xmi:type="uml:Include" xmi:id="_dK-jQHsoEe6PPoG5KEy0yw" addition="_s_VCQHsnEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_gXsW4HsoEe6PPoG5KEy0yw" name="Omogucavanje test voznje">
+    <include xmi:type="uml:Include" xmi:id="_invt8HsoEe6PPoG5KEy0yw" addition="_ZKE5oHsoEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_tdlVcHswEe6PPoG5KEy0yw" addition="_LqpmcHswEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jYOvsHsoEe6PPoG5KEy0yw" name="Sklapanje ugovora">
+    <include xmi:type="uml:Include" xmi:id="_lIOtsHsoEe6PPoG5KEy0yw" addition="_gXsW4HsoEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nJ1ZEHsoEe6PPoG5KEy0yw" name="Nacin placanja">
+    <include xmi:type="uml:Include" xmi:id="_o3MSwHsoEe6PPoG5KEy0yw" addition="_jYOvsHsoEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_cNW44HsyEe6PPoG5KEy0yw" addition="_Caf0QHsxEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_xDMq4HsoEe6PPoG5KEy0yw" name="Gotovina">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ywghQHsoEe6PPoG5KEy0yw" general="_nJ1ZEHsoEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3zvxoHsoEe6PPoG5KEy0yw" name="Uplata gotovine">
+    <include xmi:type="uml:Include" xmi:id="__3bUMHsoEe6PPoG5KEy0yw" addition="_xDMq4HsoEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WbsLUHspEe6PPoG5KEy0yw" name="Kupljen volvo">
+    <include xmi:type="uml:Include" xmi:id="_bOpkAHspEe6PPoG5KEy0yw" addition="_3zvxoHsoEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eoXR0HspEe6PPoG5KEy0yw" name="A_uplata gotovine_kupac" memberEnd="_eoXR0XspEe6PPoG5KEy0yw _eoXR1HspEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eoXR0XspEe6PPoG5KEy0yw" name="uplata gotovine" type="_3zvxoHsoEe6PPoG5KEy0yw" association="_eoXR0HspEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eoXR0nspEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eoXR03spEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eoXR1HspEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_eoXR0HspEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eoXR1XspEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eoXR1nspEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_k8C2YHspEe6PPoG5KEy0yw" name="Kredit">
+    <generalization xmi:type="uml:Generalization" xmi:id="_mcac8HspEe6PPoG5KEy0yw" general="_nJ1ZEHsoEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ujOzEHspEe6PPoG5KEy0yw" name="Podizanje kredita">
+    <include xmi:type="uml:Include" xmi:id="_RuPvUHsqEe6PPoG5KEy0yw" addition="_k8C2YHspEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_yEG40HspEe6PPoG5KEy0yw" name="Konsultant/sluzbenik"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_V5ExAHsqEe6PPoG5KEy0yw" name="A_podizanje kredita_kupac" memberEnd="_V5ExAXsqEe6PPoG5KEy0yw _V5ExBHsqEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_V5ExAXsqEe6PPoG5KEy0yw" name="podizanje kredita" type="_ujOzEHspEe6PPoG5KEy0yw" association="_V5ExAHsqEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V5ExAnsqEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V5ExA3sqEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_V5ExBHsqEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_V5ExAHsqEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V5ExBXsqEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V5ExBnsqEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bANp8HsqEe6PPoG5KEy0yw" name="Provera kreditnih sposobnosti">
+    <include xmi:type="uml:Include" xmi:id="_dRw10HsqEe6PPoG5KEy0yw" addition="_ujOzEHspEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_d6VRsHsqEe6PPoG5KEy0yw" name="A_provera kreditnih sposobnosti_konsultant/sluzbenik" memberEnd="_d6V4wHsqEe6PPoG5KEy0yw _d6V4w3sqEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_d6V4wHsqEe6PPoG5KEy0yw" name="provera kreditnih sposobnosti" type="_bANp8HsqEe6PPoG5KEy0yw" association="_d6VRsHsqEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d6V4wXsqEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d6V4wnsqEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_d6V4w3sqEe6PPoG5KEy0yw" name="konsultant/sluzbenik" type="_yEG40HspEe6PPoG5KEy0yw" association="_d6VRsHsqEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d6V4xHsqEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d6V4xXsqEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oQE9gHsqEe6PPoG5KEy0yw" name="Predstavljanje ponude">
+    <include xmi:type="uml:Include" xmi:id="_s6v84HsqEe6PPoG5KEy0yw" addition="_bANp8HsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pe6IIHsqEe6PPoG5KEy0yw" name="Provera da li je kupac clan kluba">
+    <include xmi:type="uml:Include" xmi:id="_vgeB8HsqEe6PPoG5KEy0yw" addition="_oQE9gHsqEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_ZqvZ4HssEe6PPoG5KEy0yw" addition="_C2iCQHssEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_w0KecHsqEe6PPoG5KEy0yw" name="Jeste clan">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4ZreUHsqEe6PPoG5KEy0yw" general="_pe6IIHsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zXCD0HsqEe6PPoG5KEy0yw" name="Nije clan">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5D0ngHsqEe6PPoG5KEy0yw" general="_pe6IIHsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__FhEMHsqEe6PPoG5KEy0yw" name="Davanje pogodnosti na kredit">
+    <include xmi:type="uml:Include" xmi:id="_B8eDMHsrEe6PPoG5KEy0yw" addition="_w0KecHsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Ix0KYHsrEe6PPoG5KEy0yw" name="Kreiranje potrebene dokumentacije">
+    <include xmi:type="uml:Include" xmi:id="_MmnRsHsrEe6PPoG5KEy0yw" addition="_zXCD0HsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_YPW2cHsrEe6PPoG5KEy0yw" name="Kreiranje potrebne dokumentacije">
+    <include xmi:type="uml:Include" xmi:id="_cHCSoHsrEe6PPoG5KEy0yw" addition="__FhEMHsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hOvMQHsrEe6PPoG5KEy0yw" name="Potpisivanje ugovora">
+    <include xmi:type="uml:Include" xmi:id="_j1_iYHsrEe6PPoG5KEy0yw" addition="_YPW2cHsrEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_k4_QcHsrEe6PPoG5KEy0yw" addition="_Ix0KYHsrEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_q-l8wHsrEe6PPoG5KEy0yw" name="Podignut kredit">
+    <include xmi:type="uml:Include" xmi:id="_tSIFoHsrEe6PPoG5KEy0yw" addition="_hOvMQHsrEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vWg_QHsrEe6PPoG5KEy0yw" name="Placanje rate">
+    <include xmi:type="uml:Include" xmi:id="_0wJ9cHsrEe6PPoG5KEy0yw" addition="_q-l8wHsrEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_y9Ak0HsrEe6PPoG5KEy0yw" name="A_placanje rate_kupac" memberEnd="_y9Ak0XsrEe6PPoG5KEy0yw _y9Ak1HsrEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_y9Ak0XsrEe6PPoG5KEy0yw" name="placanje rate" type="_vWg_QHsrEe6PPoG5KEy0yw" association="_y9Ak0HsrEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y9Ak0nsrEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y9Ak03srEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_y9Ak1HsrEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_y9Ak0HsrEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y9Ak1XsrEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y9Ak1nsrEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_AWEQoHssEe6PPoG5KEy0yw" name="Lizing">
+    <generalization xmi:type="uml:Generalization" xmi:id="_BqGrYHssEe6PPoG5KEy0yw" general="_nJ1ZEHsoEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_C2iCQHssEe6PPoG5KEy0yw" name="Izbor vozila">
+    <include xmi:type="uml:Include" xmi:id="_HmhmgHssEe6PPoG5KEy0yw" addition="_AWEQoHssEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KCujMHssEe6PPoG5KEy0yw" name="A_izbor vozila_kupac" memberEnd="_KCujMXssEe6PPoG5KEy0yw _KCujNHssEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KCujMXssEe6PPoG5KEy0yw" name="izbor vozila" type="_C2iCQHssEe6PPoG5KEy0yw" association="_KCujMHssEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCujMnssEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCujM3ssEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KCujNHssEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_KCujMHssEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KCujNXssEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KCujNnssEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_RPwxoHssEe6PPoG5KEy0yw" name="Sluzbenik za lizing"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_az9rwHssEe6PPoG5KEy0yw" name="A_sluzbenik za lizing_provera da li je kupac clan kluba" memberEnd="_az9rwXssEe6PPoG5KEy0yw _az9rxHssEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_az9rwXssEe6PPoG5KEy0yw" name="sluzbenik za lizing" type="_RPwxoHssEe6PPoG5KEy0yw" association="_az9rwHssEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_az9rwnssEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_az9rw3ssEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_az9rxHssEe6PPoG5KEy0yw" name="provera da li je kupac clan kluba" type="_pe6IIHsqEe6PPoG5KEy0yw" association="_az9rwHssEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_az9rxXssEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_az9rxnssEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nFLlwHssEe6PPoG5KEy0yw" name="Omogucavanje pogodnosti">
+    <include xmi:type="uml:Include" xmi:id="_yqxI0HssEe6PPoG5KEy0yw" addition="_w0KecHsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5eTSIHssEe6PPoG5KEy0yw" name="Iznos ponude">
+    <include xmi:type="uml:Include" xmi:id="_NP_7AHstEe6PPoG5KEy0yw" addition="_nFLlwHssEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_Q-ipUHstEe6PPoG5KEy0yw" addition="_zXCD0HsqEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8Bx7gHssEe6PPoG5KEy0yw" name="Proracun rate">
+    <include xmi:type="uml:Include" xmi:id="_OJIicHstEe6PPoG5KEy0yw" addition="_5eTSIHssEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8b32gHssEe6PPoG5KEy0yw" name="Sklapanje ugovora">
+    <include xmi:type="uml:Include" xmi:id="_OrV3oHstEe6PPoG5KEy0yw" addition="_8Bx7gHssEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GfWGkHstEe6PPoG5KEy0yw" name="Placanje nabavne vrednosti">
+    <include xmi:type="uml:Include" xmi:id="_PzdWQHstEe6PPoG5KEy0yw" addition="_8b32gHssEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_U8H5MHstEe6PPoG5KEy0yw" name="Dobavljac"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bcsqQHstEe6PPoG5KEy0yw" name="Isporuka predmeta">
+    <include xmi:type="uml:Include" xmi:id="_fI09wHstEe6PPoG5KEy0yw" addition="_GfWGkHstEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eI2ugHstEe6PPoG5KEy0yw" name="A_dobavljac_isporuka predmeta" memberEnd="_eI2ugXstEe6PPoG5KEy0yw _eI2uhHstEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eI2ugXstEe6PPoG5KEy0yw" name="dobavljac" type="_U8H5MHstEe6PPoG5KEy0yw" association="_eI2ugHstEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eI2ugnstEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eI2ug3stEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eI2uhHstEe6PPoG5KEy0yw" name="isporuka predmeta" type="_bcsqQHstEe6PPoG5KEy0yw" association="_eI2ugHstEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eI2uhXstEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eI2uhnstEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jBEaoHstEe6PPoG5KEy0yw" name="Kupljeno vozilo ">
+    <include xmi:type="uml:Include" xmi:id="_ldQwQHstEe6PPoG5KEy0yw" addition="_bcsqQHstEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nBne8HstEe6PPoG5KEy0yw" name="Placanje rate lizinga">
+    <include xmi:type="uml:Include" xmi:id="_zDul8HstEe6PPoG5KEy0yw" addition="_bcsqQHstEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pXl30HstEe6PPoG5KEy0yw" name="A_placanje rate lizinga_kupac" memberEnd="_pXl30XstEe6PPoG5KEy0yw _pXl31HstEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pXl30XstEe6PPoG5KEy0yw" name="placanje rate lizinga" type="_nBne8HstEe6PPoG5KEy0yw" association="_pXl30HstEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pXl30nstEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pXl303stEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pXl31HstEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_pXl30HstEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pXl31XstEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pXl31nstEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QAnMAHsuEe6PPoG5KEy0yw" name="Kupovina online">
+    <generalization xmi:type="uml:Generalization" xmi:id="_SQcgoHsuEe6PPoG5KEy0yw" general="_xmpBEHsmEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_teLdQHsuEe6PPoG5KEy0yw" name="Pretraga kataloga">
+    <include xmi:type="uml:Include" xmi:id="_vIGBYHsuEe6PPoG5KEy0yw" addition="_QAnMAHsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_z96g0HsuEe6PPoG5KEy0yw" name="Uspesna pretraga">
+    <generalization xmi:type="uml:Generalization" xmi:id="_7iS4QHsuEe6PPoG5KEy0yw" general="_teLdQHsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1FAEsHsuEe6PPoG5KEy0yw" name="Neuspesna pretraga">
+    <generalization xmi:type="uml:Generalization" xmi:id="_64tIsHsuEe6PPoG5KEy0yw" general="_teLdQHsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_BPOl4HsvEe6PPoG5KEy0yw" name="Registrovanje na sajt">
+    <generalization xmi:type="uml:Generalization" xmi:id="_DX0qEHsvEe6PPoG5KEy0yw" general="_z96g0HsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DyTmoHsvEe6PPoG5KEy0yw" name="Logovanje na sajt">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FewhYHsvEe6PPoG5KEy0yw" general="_z96g0HsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_H3478HsvEe6PPoG5KEy0yw" name="Kreiranje naloga">
+    <include xmi:type="uml:Include" xmi:id="_Js7K8HsvEe6PPoG5KEy0yw" addition="_BPOl4HsvEe6PPoG5KEy0yw"/>
+    <include xmi:type="uml:Include" xmi:id="_K1ANUHsvEe6PPoG5KEy0yw" addition="_teLdQHsuEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7-cMQHsvEe6PPoG5KEy0yw" name="Razgovor sa prodavcem">
+    <include xmi:type="uml:Include" xmi:id="_QY-WwHswEe6PPoG5KEy0yw" addition="_DyTmoHsvEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_JHIg0HswEe6PPoG5KEy0yw" name="Zakazivanje sastanka ">
+    <include xmi:type="uml:Include" xmi:id="_Q-sS8HswEe6PPoG5KEy0yw" addition="_7-cMQHsvEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LqpmcHswEe6PPoG5KEy0yw" name="Rezervisanje vozila ">
+    <include xmi:type="uml:Include" xmi:id="_S18vgHswEe6PPoG5KEy0yw" addition="_JHIg0HswEe6PPoG5KEy0yw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_yw_IwHswEe6PPoG5KEy0yw" name="Aplikacija/sajt"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Caf0QHsxEe6PPoG5KEy0yw" name="Prijavljivanje na aplikaciju"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_F5_Z8HsxEe6PPoG5KEy0yw" name="A_kupac_prijavljivanje na aplikaciju" memberEnd="_F5_Z8XsxEe6PPoG5KEy0yw _F5_Z9HsxEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F5_Z8XsxEe6PPoG5KEy0yw" name="kupac" type="_sPbEwHsmEe6PPoG5KEy0yw" association="_F5_Z8HsxEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F5_Z8nsxEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F5_Z83sxEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F5_Z9HsxEe6PPoG5KEy0yw" name="prijavljivanje na aplikaciju" type="_Caf0QHsxEe6PPoG5KEy0yw" association="_F5_Z8HsxEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F5_Z9XsxEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F5_Z9nsxEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Z3FagHsxEe6PPoG5KEy0yw" name="A_aplikacija/sajt_provera da li je kupac clan kluba" memberEnd="_Z3FagXsxEe6PPoG5KEy0yw _Z3FahHsxEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Z3FagXsxEe6PPoG5KEy0yw" name="aplikacija/sajt" type="_yw_IwHswEe6PPoG5KEy0yw" association="_Z3FagHsxEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z3FagnsxEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z3Fag3sxEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Z3FahHsxEe6PPoG5KEy0yw" name="provera da li je kupac clan kluba" type="_pe6IIHsqEe6PPoG5KEy0yw" association="_Z3FagHsxEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z3FahXsxEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z3FahnsxEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_n2bNwHsyEe6PPoG5KEy0yw" name="A_aplikacija/sajt_nacin placanja" memberEnd="_n2bNwXsyEe6PPoG5KEy0yw _n2bNxHsyEe6PPoG5KEy0yw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_n2bNwXsyEe6PPoG5KEy0yw" name="aplikacija/sajt" type="_yw_IwHswEe6PPoG5KEy0yw" association="_n2bNwHsyEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n2bNwnsyEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n2bNw3syEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_n2bNxHsyEe6PPoG5KEy0yw" name="nacin placanja" type="_nJ1ZEHsoEe6PPoG5KEy0yw" association="_n2bNwHsyEe6PPoG5KEy0yw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n2bNxXsyEe6PPoG5KEy0yw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n2bNxnsyEe6PPoG5KEy0yw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,12 @@
+<html>
+<head>
+<title> Zad.4 </title>
+</head>
+<body>
+<h1> Ovo je zadatak 4 </h1>
+<form action="../cgi-bin/vezba4.exe" method=GET>
+<p> Broj: <input name="br" size=3>
+<input type=submit value="Prosledi">
+</form>
+</body>
+</html>

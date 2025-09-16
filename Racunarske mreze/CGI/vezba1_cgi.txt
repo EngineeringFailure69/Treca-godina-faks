@@ -1,0 +1,77 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <string>
+using namespace std;
+
+int rez;
+
+void parse(string str)
+{
+    //0123456789......
+// q_s = "op1=22&op2=10&operacija=3" // 220
+
+    int pos1 = str.find("op1=", 0); // 0
+    int pos2 = str.find("&", pos1); // 6
+    string vr1 = str.substr(pos1 + 4, pos2 - pos1 - 4); // vr1=22
+    int ivr1 = stoi(vr1);
+
+    int pos3 = str.find("op2=", pos2); // 7
+    int pos4 = str.find("&", pos2 + 1); // 13
+    string vr2 = str.substr(pos3 + 4, pos4 - pos3 - 4); // vr2=10
+    int ivr2 = stoi(vr2);
+
+    int pos5 = str.find("operacija=", pos4); // 14
+    string op = str.substr(pos5 + 10, 1);
+    int iop = stoi(op);
+
+    if (op == "1") // +
+    {
+        rez = ivr1 + ivr2;
+    }
+    else if (op == "2") // -
+    {
+        rez = ivr1 - ivr2;
+    }
+    else if (op == "3") // *
+    {
+        rez = ivr1 * ivr2;
+    }
+
+    cout << "Content-Type: text/html;charset=us-ascii \n\n";
+    cout << "<html> <head> \n";
+    cout << "<title> Zad.1 </title> \n";
+    cout << "</head> \n";
+    cout << "<body> \n";
+    cout << "<h1> Lab. vezba 6 - Zad.1 </h1> \n";
+    cout << "<p> Rezultat je:" << rez << "\n";
+    cout << "</body> </html> \n";
+
+
+}
+
+int main() // cgi
+{
+
+    string req_string = getenv("REQUEST_METHOD");
+    string query_string = getenv("QUERY_STRING");
+    string postInputString;
+
+    if (req_string == "GET")
+    {
+        if (!query_string.empty())
+            parse(query_string);
+    }
+    else if (req_string == "POST")
+    {
+        if (!query_string.empty())
+            parse(query_string);
+
+        int br_byte = atoi(getenv("CONTENT_LENGTH"));
+        if (br_byte > 0) {
+            cin >> postInputString;
+            parse(postInputString);
+        }
+    }
+
+
+}

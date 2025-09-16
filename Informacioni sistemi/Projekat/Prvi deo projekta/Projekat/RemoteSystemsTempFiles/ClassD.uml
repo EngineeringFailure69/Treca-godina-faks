@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_3UrvoHvvEe6dZK2Cxt-7_Q" name="model">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_NS5gAH2IEe6jQddtomaBdw">
+    <body>Pogodnisti su null na startu&#xD;
+</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zUunkHv3Ee6dZK2Cxt-7_Q" name="Kupac">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_x9PawHv4Ee6dZK2Cxt-7_Q" name="Ime" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-p-zIHv4Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-p-zIXv4Ee6dZK2Cxt-7_Q" value="*"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZewdMHv5Ee6dZK2Cxt-7_Q">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q2d8QHv6Ee6dZK2Cxt-7_Q" name="Prezime" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TGJf4Hv6Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TGSp0Hv6Ee6dZK2Cxt-7_Q" value="*"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_TGmL0Hv6Ee6dZK2Cxt-7_Q">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YyfXoHv6Ee6dZK2Cxt-7_Q" name="clanKluba" visibility="private" type="_fM52UHv6Ee6dZK2Cxt-7_Q" isUnique="false">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ambacHv6Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_amlLcHv6Ee6dZK2Cxt-7_Q" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_am4GYHv6Ee6dZK2Cxt-7_Q">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nBda8Hv-Ee6dZK2Cxt-7_Q" name="web sajt/aplikacija" type="_z7dQYHv3Ee6dZK2Cxt-7_Q" association="_nBq2UHv-Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nBda8Xv-Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nBda8nv-Ee6dZK2Cxt-7_Q" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wkTDIHv-Ee6dZK2Cxt-7_Q" name="konsultant/sluzbenik" type="_0Mxp4Hv3Ee6dZK2Cxt-7_Q" association="_wki6wHv-Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wkTDIXv-Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wkTDInv-Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DLQ-QHv_Ee6dZK2Cxt-7_Q" name="sluzbenik za lizing" type="_0fejcHv3Ee6dZK2Cxt-7_Q" association="_DLgO0Hv_Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DLQ-QXv_Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLQ-Qnv_Ee6dZK2Cxt-7_Q" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DxdbkHv_Ee6dZK2Cxt-7_Q" name="dobavljac" type="_GHgxIHv4Ee6dZK2Cxt-7_Q" association="_DxuhUHv_Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DxdbkXv_Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dxdbknv_Ee6dZK2Cxt-7_Q" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dNTuYHwAEe6dZK2Cxt-7_Q" name="automobil" type="_IzShQHwAEe6dZK2Cxt-7_Q" association="_dNjmAHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dNTuYXwAEe6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dNTuYnwAEe6dZK2Cxt-7_Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UuvmUH1jEe6yGIovm95ybw" name="Plata" visibility="private" type="_e8soEH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VP5LkH1jEe6yGIovm95ybw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VQMGgH1jEe6yGIovm95ybw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_VRBM8H1jEe6yGIovm95ybw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IoyosH2FEe6jQddtomaBdw" name="Pogodnosti" visibility="private" type="_e8soEH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kkjx0H2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kks7wH2FEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_KlDhEH2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bzg7gH1hEe6yGIovm95ybw" name="Kupovina uzivo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rkikQH1hEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_edDJkH1hEe6yGIovm95ybw" name="Kupovina online">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_m-4AsH1hEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ex3IUH1iEe6yGIovm95ybw" name="Odluka o ponudi">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Os-GkH1iEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_x_y7AH1iEe6yGIovm95ybw" name="Odluka o kupovini">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4r18QH1iEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9AJDAH1iEe6yGIovm95ybw" name="Placanje">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jw2TkH1jEe6yGIovm95ybw" name="Iznos" type="_e8soEH1jEe6yGIovm95ybw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_l5k6oH1jEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zVfGIH1jEe6yGIovm95ybw" name="Nacin" type="_JeheUHv6Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_62mHIH1jEe6yGIovm95ybw" name="Gotovina">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FknJAH1kEe6yGIovm95ybw" name="Iznos" type="_e8soEH1jEe6yGIovm95ybw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8MBB8H1jEe6yGIovm95ybw" name="Kredit">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_K_67IH1kEe6yGIovm95ybw" name="Iznos" type="_e8soEH1jEe6yGIovm95ybw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9In0IH1jEe6yGIovm95ybw" name="Lizing">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ODvRcH1kEe6yGIovm95ybw" name="Iznos" type="_e8soEH1jEe6yGIovm95ybw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_T7fvAH1kEe6yGIovm95ybw" name="Odlazak na stranicu"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jdk80H1kEe6yGIovm95ybw" name="Uclani se u klub">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rdgAwH1kEe6yGIovm95ybw" name="Clanarina" type="_e8soEH1jEe6yGIovm95ybw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-FYJwH2DEe6jQddtomaBdw" name="Zakazivanje sastanka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DdalcH2EEe6jQddtomaBdw" name="P" type="_zqMhQHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zqMhQHv3Ee6dZK2Cxt-7_Q" name="Prodavci">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_d73vcHv-Ee6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="_d8GY8Hv-Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d73vcXv-Ee6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d73vcnv-Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D9DyAH2IEe6jQddtomaBdw" name="ID" visibility="private" type="_ZXQpkH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fc2JwH2IEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fc-FkH2IEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_FdVR8H2IEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GFgsQH2IEe6jQddtomaBdw" name="Ime" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HNVP8H2IEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HNeZ4H2IEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_HN7s4H2IEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IBbmYH2IEe6jQddtomaBdw" name="Prezime" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JO3p4H2IEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JPCB8H2IEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_JPZOUH2IEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1V8z8H1hEe6yGIovm95ybw" name="Ponuda">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5zWzYH1hEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_9x7hwH1hEe6yGIovm95ybw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_e4PbUH1iEe6yGIovm95ybw" name="Test voznja">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_j6kswH1iEe6yGIovm95ybw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lqa5wH1iEe6yGIovm95ybw" name="A" type="_IzShQHwAEe6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_z7dQYHv3Ee6dZK2Cxt-7_Q" name="Web sajt/aplikacija">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fEvRUH2FEe6jQddtomaBdw" name="URL" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hSs9sH2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hS2HoH2FEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_hTMs8H2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nDvIMH2FEe6jQddtomaBdw" name="Katalog" visibility="private" type="_IzShQHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sx_rgH2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_syI1cH2FEe6jQddtomaBdw" value="*"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_sylhYH2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yKyYIH1kEe6yGIovm95ybw" name="Prijava">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8cRPAH1kEe6yGIovm95ybw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2GOS8H1kEe6yGIovm95ybw" name="Register">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-8PRYH1kEe6yGIovm95ybw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3KX3kH1kEe6yGIovm95ybw" name="Login">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Af5cgH1lEe6yGIovm95ybw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0Mxp4Hv3Ee6dZK2Cxt-7_Q" name="Konsultant/sluzbenik">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aWLF4H2EEe6jQddtomaBdw" name="Izvrsi uplatu">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fRizsH2EEe6jQddtomaBdw" name="Iznos" type="_e8soEH1jEe6yGIovm95ybw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_g6JwQH2EEe6jQddtomaBdw" name="Provera kreditnih sposobnosti">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yn3IIH2EEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TpaLkH2HEe6jQddtomaBdw" name="Provera da li je clan kluba">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_W1Ju0H2HEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0fejcHv3Ee6dZK2Cxt-7_Q" name="Sluzbenik za lizing">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4lMXUH2GEe6jQddtomaBdw" name="Placanje nabavne vrednosti">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_952H0H2GEe6jQddtomaBdw" name="Iznos" type="_e8soEH1jEe6yGIovm95ybw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ASWQQH2HEe6jQddtomaBdw" name="D" type="_GHgxIHv4Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NMqxoH2HEe6jQddtomaBdw" name="Provera da li je clan kluba">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RFjHsH2HEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GHgxIHv4Ee6dZK2Cxt-7_Q" name="Dobavljac">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EiYiMHv_Ee6dZK2Cxt-7_Q" name="sluzbenik za lizing" type="_0fejcHv3Ee6dZK2Cxt-7_Q" association="_EiiTMHv_Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EiYiMXv_Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EiYiMnv_Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dymCEH2HEe6jQddtomaBdw" name="Isporuka predmeta">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gx6S4H2HEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_JeheUHv6Ee6dZK2Cxt-7_Q" name="String" visibility="private"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fM52UHv6Ee6dZK2Cxt-7_Q" name="Boolean" visibility="private"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_d8GY8Hv-Ee6dZK2Cxt-7_Q" name="prodavci_kupac_1" memberEnd="_d8GY8Xv-Ee6dZK2Cxt-7_Q _d73vcHv-Ee6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_d8GY8Xv-Ee6dZK2Cxt-7_Q" name="prodavci" type="_zqMhQHv3Ee6dZK2Cxt-7_Q" association="_d8GY8Hv-Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d8GY8nv-Ee6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d8GY83v-Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nBq2UHv-Ee6dZK2Cxt-7_Q" name="kupac_web sajt/aplikacija_1" memberEnd="_nBq2UXv-Ee6dZK2Cxt-7_Q _nBda8Hv-Ee6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nBq2UXv-Ee6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="_nBq2UHv-Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nBq2Unv-Ee6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nBq2U3v-Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wki6wHv-Ee6dZK2Cxt-7_Q" name="kupac_konsultant/sluzbenik_1" memberEnd="_wki6wXv-Ee6dZK2Cxt-7_Q _wkTDIHv-Ee6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wki6wXv-Ee6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="_wki6wHv-Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wki6wnv-Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wki6w3v-Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DLgO0Hv_Ee6dZK2Cxt-7_Q" name="kupac_sluzbenik za lizing_1" memberEnd="_DLgO0Xv_Ee6dZK2Cxt-7_Q _DLQ-QHv_Ee6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DLgO0Xv_Ee6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="_DLgO0Hv_Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DLgO0nv_Ee6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLgO03v_Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DxuhUHv_Ee6dZK2Cxt-7_Q" name="kupac_dobavljac_1" memberEnd="_DxuhUXv_Ee6dZK2Cxt-7_Q _DxdbkHv_Ee6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DxuhUXv_Ee6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="_DxuhUHv_Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DxuhUnv_Ee6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DxuhU3v_Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EiiTMHv_Ee6dZK2Cxt-7_Q" name="dobavljac_sluzbenik za lizing_1" memberEnd="_EiiTMXv_Ee6dZK2Cxt-7_Q _EiYiMHv_Ee6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EiiTMXv_Ee6dZK2Cxt-7_Q" name="dobavljac" type="_GHgxIHv4Ee6dZK2Cxt-7_Q" association="_EiiTMHv_Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EiiTMnv_Ee6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EiiTM3v_Ee6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IzShQHwAEe6dZK2Cxt-7_Q" name="Automobil">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eJHPUHwAEe6dZK2Cxt-7_Q" name="prodavci" type="_zqMhQHv3Ee6dZK2Cxt-7_Q" association="_eJUDoHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eJHPUXwAEe6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eJHPUnwAEe6dZK2Cxt-7_Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4JZBkH2FEe6jQddtomaBdw" name="Model" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5rbcEH2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5rj-8H2FEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_5r4vEH2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6EYHkH2FEe6jQddtomaBdw" name="Tip_menjaca" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9wTmwH2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9wdXwH2FEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_9wyH4H2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-k3QMH2FEe6jQddtomaBdw" name="Boja" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JV2QH2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JeZIH2FEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="__J4o0H2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__ttHkH2FEe6jQddtomaBdw" name="Snaga_motora" visibility="private" type="_ZXQpkH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BOlEcH2GEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BOtnUH2GEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_BPBJUH2GEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BqXBgH2GEe6jQddtomaBdw" name="Kubikaza" visibility="private" type="_e8soEH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cdz3sH2GEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cd9BoH2GEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_CeRKsH2GEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_C2h5sH2GEe6jQddtomaBdw" name="Cena" visibility="private" type="_e8soEH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dfy5IH2GEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Df8qIH2GEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_DgSBUH2GEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D3C7gH2GEe6jQddtomaBdw" name="Godiste" visibility="private" type="_ZXQpkH1jEe6yGIovm95ybw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eiz1UH2GEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ei7xIH2GEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_EjQhQH2GEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dNjmAHwAEe6dZK2Cxt-7_Q" name="kupac_automobil_1" memberEnd="_dNjmAXwAEe6dZK2Cxt-7_Q _dNTuYHwAEe6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dNjmAXwAEe6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="_dNjmAHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dNjmAnwAEe6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dNjmA3wAEe6dZK2Cxt-7_Q" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eJUDoHwAEe6dZK2Cxt-7_Q" name="automobil_prodavci_1" memberEnd="_eJUDoXwAEe6dZK2Cxt-7_Q _eJHPUHwAEe6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eJUDoXwAEe6dZK2Cxt-7_Q" name="automobil" type="_IzShQHwAEe6dZK2Cxt-7_Q" association="_eJUDoHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eJUDonwAEe6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eJUDo3wAEe6dZK2Cxt-7_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7ZjqkHwAEe6dZK2Cxt-7_Q" name="Klub kupaca">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__8S18HwAEe6dZK2Cxt-7_Q" name="kupac" type="_zUunkHv3Ee6dZK2Cxt-7_Q" association="__8hfcHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__8S18XwAEe6dZK2Cxt-7_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__8S18nwAEe6dZK2Cxt-7_Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VU35wH2FEe6jQddtomaBdw" name="Partneri" visibility="private" type="_JeheUHv6Ee6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XM2IAH2FEe6jQddtomaBdw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XM_R8H2FEe6jQddtomaBdw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_XNWeUH2FEe6jQddtomaBdw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_29sf8H2EEe6jQddtomaBdw" name="Dodaj u klub">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7aWRcH2EEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8hTScH2EEe6jQddtomaBdw" name="Izbaci iz kluba">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="__bcvYH2EEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BpNncH2FEe6jQddtomaBdw" name="Dodeli pogodnosti">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FClXAH2FEe6jQddtomaBdw" name="K" type="_zUunkHv3Ee6dZK2Cxt-7_Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__8hfcHwAEe6dZK2Cxt-7_Q" name="klub kupaca_kupac_1" memberEnd="__8hfcXwAEe6dZK2Cxt-7_Q __8S18HwAEe6dZK2Cxt-7_Q">
+    <ownedEnd xmi:type="uml:Property" xmi:id="__8hfcXwAEe6dZK2Cxt-7_Q" name="klub kupaca" type="_7ZjqkHwAEe6dZK2Cxt-7_Q" association="__8hfcHwAEe6dZK2Cxt-7_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__8hfcnwAEe6dZK2Cxt-7_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__8hfc3wAEe6dZK2Cxt-7_Q" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_ZXQpkH1jEe6yGIovm95ybw" name="Int" visibility="private"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_e8soEH1jEe6yGIovm95ybw" name="Real" visibility="private"/>
+</uml:Model>

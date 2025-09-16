@@ -1,0 +1,40 @@
+body{
+    display: flex;
+}
+
+.kriterijumiPretrage{
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    height: fit-content;
+}
+
+.rezultatiPretrage{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: row; 
+}
+
+.margin-10{
+    margin: 10px;
+}
+
+.pretraga-dugme{
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.auto{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    max-width: fit-content;
+    text-align: center;
+}

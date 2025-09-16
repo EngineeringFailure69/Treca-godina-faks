@@ -1,0 +1,61 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <stdio.h>
+#include <fcntl.h>
+#include <io.h>
+#include <vector>
+using namespace std;
+
+void parse(string str)
+{
+    //  01234
+ //q_s: br=22
+
+    int pos1 = str.find("x=", 0); // 0
+    string v1 = str.substr(pos1 + 2, str.size() - pos1 - 3);
+    int br = stoi(v1);
+
+    if (br < 100) {
+        cout << "Content-Type: text/html;charset=us-ascii \n\n";
+        cout << "<html> <head> \n";
+        cout << "<title> Zad.3 </title> \n";
+        cout << "</head> \n";
+        cout << "<body> \n";
+        cout << "<h1> Lab. vezba 6 - Zad.3 </h1> \n";
+        cout << "<p> Kliknuo si na crvenu polovinu slike</p>\n";
+        cout << "</body> </html> \n";
+    }
+    else if (br > 100) {
+        cout << "Content-Type: text/html;charset=us-ascii \n\n";
+        cout << "<html> <head> \n";
+        cout << "<title> Zad.3 </title> \n";
+        cout << "</head> \n";
+        cout << "<body> \n";
+        cout << "<h1> Lab. vezba 6 - Zad.3 </h1> \n";
+        cout << "<p> Kliknuo si na zutu polovinu slike</p>\n";
+        cout << "</body> </html> \n";
+    }
+    else {
+        cout << "Content-Type: text/html;charset=us-ascii \n\n";
+        cout << "<html> <head> \n";
+        cout << "<title> Zad.3 </title> \n";
+        cout << "</head> \n";
+        cout << "<body> \n";
+        cout << "<h1> Lab. vezba 6 - Zad.3 </h1> \n";
+        cout << "<p> Kliknuo si u centar slike</p>\n";
+        cout << "</body> </html> \n";
+    }
+}
+int main()
+{
+    string reqString = getenv("REQUEST_METHOD");
+    string queryString = getenv("QUERY_STRING");
+
+    if (reqString == "GET")
+    {
+        if (!queryString.empty())
+            parse(queryString);
+    }
+}

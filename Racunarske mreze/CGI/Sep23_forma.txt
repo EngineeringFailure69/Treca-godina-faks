@@ -1,0 +1,12 @@
+<html>
+<head>
+<title> Septembarski </title>
+</head>
+<body>
+<h1> Septambarski_23 cgi </h1>
+<form action="../cgi-bin/Sep23.exe" method=POST>
+<p> Kliknuti na deo slike </p>
+<input type="image" src="images/3x3.png" style="height:300px; width:300px" size=3>
+</form>
+</body>
+</html>

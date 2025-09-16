@@ -1,0 +1,48 @@
+body{
+    display: flex;
+}
+
+.formaZaUnos{
+    border: 1px dotted black;
+    width: 400px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: fit-content;
+}
+
+.prikazSoba{
+    border: 1px dotted black;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    gap: 50px;
+}
+
+.margin-10{
+    margin: 10px;
+}
+
+.dodaj-dugme{
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.soba-container{
+    border: 1px solid black;
+    margin: 5px;
+    width: fit-content;
+}
+
+.soba-naslov{
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebTemplate.Models;
+public class Bolnica
+{
+    [Key]
+    public int ID {get; set;}
+    public required string Naziv {get; set;}
+    public required string Lokacija {get; set;}
+    public uint BrojOdeljenja {get; set;}
+    public uint BrojOsoblja {get; set;}
+    public required string BrojTelefona {get; set;}
+    public List<Zaposlen>? Zaposleni {get; set;}
+}

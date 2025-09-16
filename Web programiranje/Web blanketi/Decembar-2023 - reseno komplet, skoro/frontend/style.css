@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.prodavnicaDiv {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.formaZaUnos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.informacije {
+    /* flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px; */
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%; /* Dodaj širinu 100% kako bi zauzimao celu dostupnu širinu */
+}
+
+.margin-10 {
+    margin-top: 10px;
+}
+
+label {
+    align-self: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dodaj-dugme {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.proizvodDiv {
+    display: flex;
+    flex-direction: column; /* Postavi sve proizvode u kolonu */
+    margin-bottom: 10px; /* Razmak između stavki */
+    width: 100%; /* Osigurava da zauzima celu širinu */
+    box-sizing: border-box; /* Uključuje marginu u ukupnu širinu */
+}
+
+.proizvodInfo {
+    display: flex;
+    justify-content: space-between; /* Raspoređuje naziv i količinu u istom redu */
+    align-items: center;
+    margin-bottom: 5px; /* Razmak između naziva/količine i akcija */
+}
+
+.proizvodNaziv {
+    flex: 1; /* Omogućava nazivu proizvoda da zauzme sav raspoloživi prostor s leve strane */
+    text-align: left;
+}
+
+.proizvodKolicina {
+    margin-left: 10px; /* Razmak između naziva proizvoda i količine */
+    text-align: right;
+}
+
+.proizvodActions {
+    display: flex;
+    align-items: center; /* Poravnava sve elemente po visini */
+}
+
+.proizvodProgress {
+    flex: 1; /* Omogućava progress baru da zauzme sav raspoloživi prostor */
+    height: 20px; /* Visina pravougaonika */
+    background-color: #e0e0e0; /* Pozadina pravougaonika */
+    border-radius: 5px;
+    margin-right: 10px; /* Razmak između progress bara i numeric input-a */
+    position: relative; /* Omogućava pozicioniranje unutrašnjih elemenata */
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Poravnanje teksta u pravougaoniku */
+    font-weight: bold;
+    position: absolute; /* Pozicioniranje unutar pravougaonika */
+    left: 0;
+    top: 0;
+}
+
+.input-kolicina-updown {
+    width: 60px !important; /* Širina numeric input-a */
+    margin-right: 10px; /* Razmak između numeric input-a i dugmeta */
+}
+
+.prodaj-dugme {
+    width: 80px; /* Širina dugmeta */
+}

@@ -1,0 +1,12 @@
+<html>
+<head>
+<title> April </title>
+</head>
+<body>
+<h1> Aprilski_23 cgi </h1>
+<form action="../cgi-bin/Apr23.exe" method=GET>
+<p> Kliknuti na deo slike </p>
+<input type="image" src="images/dotted.png" style="height:100px; width:100px" size=3>
+</form>
+</body>
+</html>

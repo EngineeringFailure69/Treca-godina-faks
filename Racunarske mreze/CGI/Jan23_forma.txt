@@ -1,0 +1,7 @@
+<html><head><title>Januar 2023 </title></head>
+<body><h1> CGI sabirac </h1>
+<form action="../cgi-bin/Jan23.exe" method=GET>
+<p> <input type="text" name="prvi" value="0">
+<p> <input type="text" name="drugi" value="0">
+<p> <input type=submit value="saberi">
+</form></body></html>

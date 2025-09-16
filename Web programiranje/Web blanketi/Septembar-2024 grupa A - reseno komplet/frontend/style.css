@@ -1,0 +1,107 @@
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.bodyContainer{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.kriterijumiPretrage{
+    border: 1px dotted black;
+    padding: 10px;
+    width: 500px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.rezultatiPretrageForma{
+    border: 1px dotted black;
+    padding: 10px;
+    gap: 10px;
+    display: block;
+    float: left;
+    width: 500px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.rezultatiPretrageElementi{
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.margin-10{
+    padding: 10px;
+}
+.dropdown-birajStan{
+    width: 70%;    
+    height: fit-content;
+    float: right;
+    margin-left: 50px;
+}
+
+.divZaLabeluIDd{
+    display: flex;
+    flex-direction: row;
+}
+.btnPretrazi{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.stanDiv{
+    display: flex;
+    flex-direction: column;
+}
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.labela1{
+    width: 100%;
+    margin: 10px;
+}
+.btnIzracunaj{
+    width: 100%;
+}
+.stanDiv2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.infoDiv2{
+    display: flex;
+    flex-direction: column;
+}
+
+.labela2{
+    width: 100%;
+    margin: 10px;
+}
+
+.labela2Da{
+    background-color: lightgreen;
+}
+
+.labela2Ne{
+    background-color: lightsalmon;
+}
+
+.KriterijumiForma{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 10px;
+}

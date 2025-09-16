@@ -1,0 +1,45 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<iostream>
+#include<string>
+using namespace std;
+void parse(string str) {
+	//?prvi=0&drugi=0
+	int posPrvi = str.find("prvi=");
+	int posDrugi = str.find("drugi=");
+	int posa = str.find("&");
+	string vrPrvi = str.substr(posPrvi + 5, posa - posPrvi - 5);
+	string vrDrugi = str.substr(posDrugi + 6, str.size() - posDrugi - 6);
+	int ivrPrvi = stoi(vrPrvi);
+	int ivrDrugi = stoi(vrDrugi);
+	
+	int rez = ivrPrvi + ivrDrugi;
+	cout << "Content-type:text/html\n\n";
+	cout << "<html> <head> \n";
+	cout << "<title> Januarski </title> \n";
+	cout << "</head>\n";
+	cout << "<body> \n";
+	cout << "<h1>Januarski_23 cgi </h1> \n";
+	cout << "<p> Rezultat: " << rez << "</p>\n";
+	cout << "</body> </html> \n";
+}
+void main() {
+	string req_string = getenv("REQUEST_METHOD");
+	string query_string = getenv("QUERY_STRING");
+	string postInputString;
+	if (req_string == "GET") {
+		if (!query_string.empty()) {
+			parse(query_string);
+		}
+	}
+	else if (req_string == "POST") {
+		if (!query_string.empty()) {
+			parse(query_string);
+		}
+		int br_byte = atoi(getenv("CONTENT_LENGTH"));
+		if (br_byte > 0) {
+			cin >> postInputString;
+			parse(postInputString);
+		}
+	}
+	
+}

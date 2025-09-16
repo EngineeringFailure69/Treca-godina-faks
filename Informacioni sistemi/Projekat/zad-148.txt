@@ -1,0 +1,4 @@
+124. Informacioni sistem za prodaju automobila marke Volvo -  današnjici, sve je cešca pojava da proizvodaci nude posebne pogodnosti svojim redovnim klijentima. Na taj nacin proizvodaci organizuju klubove potrošaca, koji olakšavaju klijentima pregled i aktiviranje pogodnosti.
+
+
+Obrazac: tok akcije

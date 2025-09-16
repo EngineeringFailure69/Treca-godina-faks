@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_fjkJQHs-Ee6PPoG5KEy0yw" name="model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_fjlXYHs-Ee6PPoG5KEy0yw" name="Activity1" node="_1bhekHs_Ee6PPoG5KEy0yw _L91N4HtAEe6PPoG5KEy0yw _hfbuIHtAEe6PPoG5KEy0yw _nq7KkHtBEe6PPoG5KEy0yw _9O5pYHtBEe6PPoG5KEy0yw _iQQcMHtCEe6PPoG5KEy0yw _kIX0YHtCEe6PPoG5KEy0yw _1dNZQHtCEe6PPoG5KEy0yw _NMf5EHtDEe6PPoG5KEy0yw _aYTzEHtDEe6PPoG5KEy0yw _pkj60HtDEe6PPoG5KEy0yw _AULtYHtEEe6PPoG5KEy0yw _NdgUEHtEEe6PPoG5KEy0yw _PKNGcHtEEe6PPoG5KEy0yw _cxy9gHtEEe6PPoG5KEy0yw _osDJAHtEEe6PPoG5KEy0yw _JyUmUHtFEe6PPoG5KEy0yw _mvC0UHtFEe6PPoG5KEy0yw _6GdU8HtFEe6PPoG5KEy0yw _7edCoHtFEe6PPoG5KEy0yw _YK1ukHtGEe6PPoG5KEy0yw _oQhYsHtGEe6PPoG5KEy0yw _ryuUIHtGEe6PPoG5KEy0yw _ybfX4HtGEe6PPoG5KEy0yw _2vAbgHtGEe6PPoG5KEy0yw _K5qW8HtHEe6PPoG5KEy0yw _-Db18HtHEe6E-ugEih418Q _Cps2cHtIEe6E-ugEih418Q _FX8lYHtIEe6E-ugEih418Q _GcLpkHtIEe6E-ugEih418Q _hzZSUHtIEe6E-ugEih418Q _oLQMQHtIEe6E-ugEih418Q _3vq8YHtIEe6E-ugEih418Q _TLA3MHtJEe6E-ugEih418Q _g2w1gHtJEe6E-ugEih418Q _o9bIsHtLEe6E-ugEih418Q _IlTVYHtMEe6E-ugEih418Q _SA2p0HtMEe6E-ugEih418Q _i2_ggHtMEe6E-ugEih418Q _kilfoHtMEe6E-ugEih418Q _m_kfcHtMEe6E-ugEih418Q _pAGz0HtMEe6E-ugEih418Q _1Oli4HtMEe6E-ugEih418Q _6GuWgHtMEe6E-ugEih418Q _90JqgHtMEe6E-ugEih418Q _Pv9IwHtNEe6E-ugEih418Q">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_G1_U4HtBEe6PPoG5KEy0yw">
+      <body>Kupovina uzivo</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Kv03wHtCEe6PPoG5KEy0yw">
+      <body>Adekvatna ponuda</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Q7YbEHtCEe6PPoG5KEy0yw">
+      <body>Nacin kupovine</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_UhKO8HtCEe6PPoG5KEy0yw">
+      <body>Ponuda</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_XFE9MHtCEe6PPoG5KEy0yw">
+      <body>Neadekvatna ponuda</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_bZ9SwHtCEe6PPoG5KEy0yw">
+      <body>Neuspesna kupovina</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_8dQUkHtCEe6PPoG5KEy0yw">
+      <body>Nacin placanja</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_WlisEHtDEe6PPoG5KEy0yw">
+      <body>Gotovina</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_f_2qYHtDEe6PPoG5KEy0yw">
+      <body>Kupljen volvo</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_giLe4HtEEe6PPoG5KEy0yw">
+      <body>Provera da li je kupac clan kluba</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="__exS4HtEEe6PPoG5KEy0yw">
+      <body>Jeste clan kluba</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_R_7EcHtGEe6PPoG5KEy0yw">
+      <body>Kredit</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_eAaa0HtGEe6PPoG5KEy0yw">
+      <body>Lizing</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_DXEIMHtHEe6PPoG5KEy0yw">
+      <body>Jeste clan</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_87hWMHtIEe6E-ugEih418Q">
+      <body>Kupljeno vozilo</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_ZRbb0HtJEe6E-ugEih418Q">
+      <body>Online kupovina</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_vhockHtLEe6E-ugEih418Q">
+      <body>Neuspesna pretraga</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_065AQHtLEe6E-ugEih418Q">
+      <body>Uspesna pretraga</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Nr-UQHtMEe6E-ugEih418Q">
+      <body>Registrovanje na sajt</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_XRSBoHtMEe6E-ugEih418Q">
+      <body>Logovanje na sajt</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_BmukQHtNEe6E-ugEih418Q">
+      <body>Neuspesna kupovina</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_GTHa4HtNEe6E-ugEih418Q">
+      <body>Neuspesno placanje</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_ZHMk8HtNEe6E-ugEih418Q">
+      <body>Uspesno placanje</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_kIDDQHtNEe6E-ugEih418Q">
+      <body>Online placanje</body>
+    </ownedComment>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_9zaWkHs_Ee6PPoG5KEy0yw" name="ControlFlow" target="_1bhekHs_Ee6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kDF9sHtAEe6PPoG5KEy0yw" name="ControlFlow1" source="_L91N4HtAEe6PPoG5KEy0yw" target="_1bhekHs_Ee6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mx-l0HtAEe6PPoG5KEy0yw" name="Kupovina uzivo" source="_1bhekHs_Ee6PPoG5KEy0yw" target="_hfbuIHtAEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vXspAHtBEe6PPoG5KEy0yw" name="Neadekvatna ponuda" source="_hfbuIHtAEe6PPoG5KEy0yw" target="_nq7KkHtBEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_G6rLIHtCEe6PPoG5KEy0yw" name="ControlFlow2" source="_hfbuIHtAEe6PPoG5KEy0yw" target="_9O5pYHtBEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pVyUcHtCEe6PPoG5KEy0yw" name="ControlFlow3" source="_9O5pYHtBEe6PPoG5KEy0yw" target="_iQQcMHtCEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qRoRoHtCEe6PPoG5KEy0yw" name="ControlFlow4" source="_iQQcMHtCEe6PPoG5KEy0yw" target="_kIX0YHtCEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_53gaUHtCEe6PPoG5KEy0yw" name="ControlFlow5" source="_kIX0YHtCEe6PPoG5KEy0yw" target="_1dNZQHtCEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UGsrEHtDEe6PPoG5KEy0yw" name="Gotovina" source="_1dNZQHtCEe6PPoG5KEy0yw" target="_NMf5EHtDEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dT8dwHtDEe6PPoG5KEy0yw" name="ControlFlow6" source="_NMf5EHtDEe6PPoG5KEy0yw" target="_aYTzEHtDEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_svpWwHtDEe6PPoG5KEy0yw" name="Nije gotovina" source="_1dNZQHtCEe6PPoG5KEy0yw" target="_pkj60HtDEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IOgfoHtEEe6PPoG5KEy0yw" name="ControlFlow7" source="_pkj60HtDEe6PPoG5KEy0yw" target="_AULtYHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WKOzoHtEEe6PPoG5KEy0yw" name="ControlFlow8" source="_AULtYHtEEe6PPoG5KEy0yw" target="_NdgUEHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XMuycHtEEe6PPoG5KEy0yw" name="ControlFlow9" source="_NdgUEHtEEe6PPoG5KEy0yw" target="_PKNGcHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5SNqAHtEEe6PPoG5KEy0yw" name="ControlFlow10" source="_PKNGcHtEEe6PPoG5KEy0yw" target="_cxy9gHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8S9eMHtEEe6PPoG5KEy0yw" name="Jeste clan" source="_cxy9gHtEEe6PPoG5KEy0yw" target="_osDJAHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Fr5jgHtFEe6PPoG5KEy0yw" name="ControlFlow11" source="_cxy9gHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_G3OHIHtFEe6PPoG5KEy0yw" name="ControlFlow12" source="_osDJAHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z5IR0HtFEe6PPoG5KEy0yw" name="ControlFlow13" source="_cxy9gHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bBN7QHtFEe6PPoG5KEy0yw" name="ControlFlow14" source="_osDJAHtEEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tQ5-0HtFEe6PPoG5KEy0yw" name="ControlFlow15" source="_cxy9gHtEEe6PPoG5KEy0yw" target="_mvC0UHtFEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vlPY8HtFEe6PPoG5KEy0yw" name="ControlFlow16" source="_osDJAHtEEe6PPoG5KEy0yw" target="_mvC0UHtFEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wZ8MUHtFEe6PPoG5KEy0yw" name="ControlFlow17" source="_mvC0UHtFEe6PPoG5KEy0yw" target="_JyUmUHtFEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NnTeYHtGEe6PPoG5KEy0yw" name="ControlFlow18" source="_JyUmUHtFEe6PPoG5KEy0yw" target="_6GdU8HtFEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Ogw18HtGEe6PPoG5KEy0yw" name="ControlFlow19" source="_6GdU8HtFEe6PPoG5KEy0yw" target="_7edCoHtFEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bah9sHtGEe6PPoG5KEy0yw" name="Nije kredit" source="_pkj60HtDEe6PPoG5KEy0yw" target="_YK1ukHtGEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8H-rUHtGEe6PPoG5KEy0yw" name="ControlFlow20" source="_YK1ukHtGEe6PPoG5KEy0yw" target="_oQhYsHtGEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-ENugHtGEe6PPoG5KEy0yw" name="ControlFlow21" source="_oQhYsHtGEe6PPoG5KEy0yw" target="_ryuUIHtGEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AA-WIHtHEe6PPoG5KEy0yw" name="ControlFlow22" source="_ryuUIHtGEe6PPoG5KEy0yw" target="_ybfX4HtGEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BZKREHtHEe6PPoG5KEy0yw" name="Jeste clan" source="_ybfX4HtGEe6PPoG5KEy0yw" target="_2vAbgHtGEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NhZOMHtHEe6PPoG5KEy0yw" name="ControlFlow23" source="_2vAbgHtGEe6PPoG5KEy0yw" target="_K5qW8HtHEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_S4iSAHtHEe6PPoG5KEy0yw" name="ControlFlow24" source="_ybfX4HtGEe6PPoG5KEy0yw" target="_K5qW8HtHEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OMdH8HtIEe6E-ugEih418Q" name="ControlFlow25" source="_K5qW8HtHEe6PPoG5KEy0yw" target="_-Db18HtHEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_P9N68HtIEe6E-ugEih418Q" name="ControlFlow26" source="_-Db18HtHEe6E-ugEih418Q" target="_Cps2cHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QwGwcHtIEe6E-ugEih418Q" name="ControlFlow27" source="_Cps2cHtIEe6E-ugEih418Q" target="_FX8lYHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RhAo8HtIEe6E-ugEih418Q" name="ControlFlow28" source="_FX8lYHtIEe6E-ugEih418Q" target="_GcLpkHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mSpE0HtIEe6E-ugEih418Q" name="ControlFlow29" source="_GcLpkHtIEe6E-ugEih418Q" target="_hzZSUHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qhwwoHtIEe6E-ugEih418Q" name="ControlFlow30" source="_hzZSUHtIEe6E-ugEih418Q" target="_oLQMQHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5-3-4HtIEe6E-ugEih418Q" name="ControlFlow31" source="_oLQMQHtIEe6E-ugEih418Q" target="_3vq8YHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_66sG4HtIEe6E-ugEih418Q" name="ControlFlow32" source="_7edCoHtFEe6PPoG5KEy0yw" target="_3vq8YHtIEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WW_D8HtJEe6E-ugEih418Q" name="Online kupovina" source="_1bhekHs_Ee6PPoG5KEy0yw" target="_TLA3MHtJEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pIJc4HtJEe6E-ugEih418Q" name="ControlFlow33" source="_TLA3MHtJEe6E-ugEih418Q" target="_g2w1gHtJEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rC9jwHtJEe6E-ugEih418Q" name="Neuspesna pretraga" source="_g2w1gHtJEe6E-ugEih418Q" target="_nq7KkHtBEe6PPoG5KEy0yw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qiAg4HtLEe6E-ugEih418Q" name="Uspesna pretraga" source="_g2w1gHtJEe6E-ugEih418Q" target="_o9bIsHtLEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NB3nUHtMEe6E-ugEih418Q" name="ControlFlow34" source="_o9bIsHtLEe6E-ugEih418Q" target="_IlTVYHtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_TVqgoHtMEe6E-ugEih418Q" name="Logovanje na sajt" source="_o9bIsHtLEe6E-ugEih418Q" target="_SA2p0HtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Uh0xwHtMEe6E-ugEih418Q" name="ControlFlow36" source="_IlTVYHtMEe6E-ugEih418Q" target="_SA2p0HtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uJwOMHtMEe6E-ugEih418Q" name="ControlFlow37" source="_SA2p0HtMEe6E-ugEih418Q" target="_i2_ggHtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_u5qBIHtMEe6E-ugEih418Q" name="ControlFlow38" source="_i2_ggHtMEe6E-ugEih418Q" target="_kilfoHtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vnleIHtMEe6E-ugEih418Q" name="ControlFlow39" source="_kilfoHtMEe6E-ugEih418Q" target="_m_kfcHtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wVAk0HtMEe6E-ugEih418Q" name="ControlFlow40" source="_m_kfcHtMEe6E-ugEih418Q" target="_pAGz0HtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_3IHQUHtMEe6E-ugEih418Q" name="ControlFlow41" source="_pAGz0HtMEe6E-ugEih418Q" target="_1Oli4HtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8q9N0HtMEe6E-ugEih418Q" name="ControlFlow42" source="_1Oli4HtMEe6E-ugEih418Q" target="_6GuWgHtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AeOrIHtNEe6E-ugEih418Q" name="ControlFlow43" source="_6GuWgHtMEe6E-ugEih418Q" target="_90JqgHtMEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WplTAHtNEe6E-ugEih418Q" name="Uspesno placanje" source="_6GuWgHtMEe6E-ugEih418Q" target="_Pv9IwHtNEe6E-ugEih418Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PwkXUHtOEe6E-ugEih418Q" name="ControlFlow44" source="_Pv9IwHtNEe6E-ugEih418Q" target="_1dNZQHtCEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_1bhekHs_Ee6PPoG5KEy0yw" name="Nacin kupovine" outgoing="_mx-l0HtAEe6PPoG5KEy0yw _WW_D8HtJEe6E-ugEih418Q" incoming="_9zaWkHs_Ee6PPoG5KEy0yw _kDF9sHtAEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_L91N4HtAEe6PPoG5KEy0yw" name="Kupovina auta" visibility="public" outgoing="_kDF9sHtAEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_hfbuIHtAEe6PPoG5KEy0yw" name="Ponuda" outgoing="_vXspAHtBEe6PPoG5KEy0yw _G6rLIHtCEe6PPoG5KEy0yw" incoming="_mx-l0HtAEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_nq7KkHtBEe6PPoG5KEy0yw" name="Neuspesna kupovina" incoming="_vXspAHtBEe6PPoG5KEy0yw _rC9jwHtJEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_9O5pYHtBEe6PPoG5KEy0yw" name="Razgovor sa kupcem o ponudama" outgoing="_pVyUcHtCEe6PPoG5KEy0yw" incoming="_G6rLIHtCEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_iQQcMHtCEe6PPoG5KEy0yw" name="Omogucavanje test voznje" outgoing="_qRoRoHtCEe6PPoG5KEy0yw" incoming="_pVyUcHtCEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_kIX0YHtCEe6PPoG5KEy0yw" name="Sklapanje ugovora" outgoing="_53gaUHtCEe6PPoG5KEy0yw" incoming="_qRoRoHtCEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_1dNZQHtCEe6PPoG5KEy0yw" name="Nacin placanja " outgoing="_UGsrEHtDEe6PPoG5KEy0yw _svpWwHtDEe6PPoG5KEy0yw" incoming="_53gaUHtCEe6PPoG5KEy0yw _PwkXUHtOEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_NMf5EHtDEe6PPoG5KEy0yw" name="Uplata gotovine" outgoing="_dT8dwHtDEe6PPoG5KEy0yw" incoming="_UGsrEHtDEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_aYTzEHtDEe6PPoG5KEy0yw" name="Kupljen volvo" incoming="_dT8dwHtDEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_pkj60HtDEe6PPoG5KEy0yw" name="Kredit" outgoing="_IOgfoHtEEe6PPoG5KEy0yw _bah9sHtGEe6PPoG5KEy0yw" incoming="_svpWwHtDEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_AULtYHtEEe6PPoG5KEy0yw" name="Provera kreditnih sposobnosti" outgoing="_WKOzoHtEEe6PPoG5KEy0yw" incoming="_IOgfoHtEEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_NdgUEHtEEe6PPoG5KEy0yw" name="Predstavljanje ponude" outgoing="_XMuycHtEEe6PPoG5KEy0yw" incoming="_WKOzoHtEEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_PKNGcHtEEe6PPoG5KEy0yw" name="Provera da li je klupac clan kluba" outgoing="_5SNqAHtEEe6PPoG5KEy0yw" incoming="_XMuycHtEEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_cxy9gHtEEe6PPoG5KEy0yw" name="Da li je clan kluba" outgoing="_8S9eMHtEEe6PPoG5KEy0yw _Fr5jgHtFEe6PPoG5KEy0yw _Z5IR0HtFEe6PPoG5KEy0yw _tQ5-0HtFEe6PPoG5KEy0yw" incoming="_5SNqAHtEEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_osDJAHtEEe6PPoG5KEy0yw" name="Davanje pogodnosti na kredit" outgoing="_G3OHIHtFEe6PPoG5KEy0yw _bBN7QHtFEe6PPoG5KEy0yw _vlPY8HtFEe6PPoG5KEy0yw" incoming="_8S9eMHtEEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_JyUmUHtFEe6PPoG5KEy0yw" name="Kreiranje potrebne dokumentacije" outgoing="_NnTeYHtGEe6PPoG5KEy0yw" incoming="_wZ8MUHtFEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_mvC0UHtFEe6PPoG5KEy0yw" name="DecisionNode" outgoing="_wZ8MUHtFEe6PPoG5KEy0yw" incoming="_tQ5-0HtFEe6PPoG5KEy0yw _vlPY8HtFEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_6GdU8HtFEe6PPoG5KEy0yw" name="Potpisivanje ugovora" outgoing="_Ogw18HtGEe6PPoG5KEy0yw" incoming="_NnTeYHtGEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_7edCoHtFEe6PPoG5KEy0yw" name="Placanje rate" outgoing="_66sG4HtIEe6E-ugEih418Q" incoming="_Ogw18HtGEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_YK1ukHtGEe6PPoG5KEy0yw" name="Lizing" outgoing="_8H-rUHtGEe6PPoG5KEy0yw" incoming="_bah9sHtGEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_oQhYsHtGEe6PPoG5KEy0yw" name="Izbor vozila" outgoing="_-ENugHtGEe6PPoG5KEy0yw" incoming="_8H-rUHtGEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_ryuUIHtGEe6PPoG5KEy0yw" name="Provera da li je clan kluba" outgoing="_AA-WIHtHEe6PPoG5KEy0yw" incoming="_-ENugHtGEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_ybfX4HtGEe6PPoG5KEy0yw" name="Da li je clan" outgoing="_BZKREHtHEe6PPoG5KEy0yw _S4iSAHtHEe6PPoG5KEy0yw" incoming="_AA-WIHtHEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_2vAbgHtGEe6PPoG5KEy0yw" name="Omogucavanje pogodnosti" outgoing="_NhZOMHtHEe6PPoG5KEy0yw" incoming="_BZKREHtHEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_K5qW8HtHEe6PPoG5KEy0yw" name="DecisionNode1" outgoing="_OMdH8HtIEe6E-ugEih418Q" incoming="_NhZOMHtHEe6PPoG5KEy0yw _S4iSAHtHEe6PPoG5KEy0yw"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_-Db18HtHEe6E-ugEih418Q" name="Iznos ponude" outgoing="_P9N68HtIEe6E-ugEih418Q" incoming="_OMdH8HtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_Cps2cHtIEe6E-ugEih418Q" name="Proracun rate" outgoing="_QwGwcHtIEe6E-ugEih418Q" incoming="_P9N68HtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_FX8lYHtIEe6E-ugEih418Q" name="Sklapanje ugovora" outgoing="_RhAo8HtIEe6E-ugEih418Q" incoming="_QwGwcHtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_GcLpkHtIEe6E-ugEih418Q" name="Placanje nabavne vrednosti" outgoing="_mSpE0HtIEe6E-ugEih418Q" incoming="_RhAo8HtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_hzZSUHtIEe6E-ugEih418Q" name="Isporuka predmeta" outgoing="_qhwwoHtIEe6E-ugEih418Q" incoming="_mSpE0HtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_oLQMQHtIEe6E-ugEih418Q" name="Placanje rate lizinga" outgoing="_5-3-4HtIEe6E-ugEih418Q" incoming="_qhwwoHtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_3vq8YHtIEe6E-ugEih418Q" name="Kupljeno vozilo" incoming="_5-3-4HtIEe6E-ugEih418Q _66sG4HtIEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_TLA3MHtJEe6E-ugEih418Q" name="Pretraga kataloga" outgoing="_pIJc4HtJEe6E-ugEih418Q" incoming="_WW_D8HtJEe6E-ugEih418Q"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_g2w1gHtJEe6E-ugEih418Q" name="Pretraga kataloga" outgoing="_rC9jwHtJEe6E-ugEih418Q _qiAg4HtLEe6E-ugEih418Q" incoming="_pIJc4HtJEe6E-ugEih418Q"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_o9bIsHtLEe6E-ugEih418Q" name="MergeNode" outgoing="_NB3nUHtMEe6E-ugEih418Q _TVqgoHtMEe6E-ugEih418Q" incoming="_qiAg4HtLEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_IlTVYHtMEe6E-ugEih418Q" name="Kreiranje naloga" outgoing="_Uh0xwHtMEe6E-ugEih418Q" incoming="_NB3nUHtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_SA2p0HtMEe6E-ugEih418Q" name="MergeNode1" outgoing="_uJwOMHtMEe6E-ugEih418Q" incoming="_TVqgoHtMEe6E-ugEih418Q _Uh0xwHtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_i2_ggHtMEe6E-ugEih418Q" name="Razgovor sa prodavcem" outgoing="_u5qBIHtMEe6E-ugEih418Q" incoming="_uJwOMHtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_kilfoHtMEe6E-ugEih418Q" name="Zakazivanje sastanka" outgoing="_vnleIHtMEe6E-ugEih418Q" incoming="_u5qBIHtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_m_kfcHtMEe6E-ugEih418Q" name="Rezervisanje vozila" outgoing="_wVAk0HtMEe6E-ugEih418Q" incoming="_vnleIHtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_pAGz0HtMEe6E-ugEih418Q" name="Test voznja" outgoing="_3IHQUHtMEe6E-ugEih418Q" incoming="_wVAk0HtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_1Oli4HtMEe6E-ugEih418Q" name="Potpisivanje ugovora " outgoing="_8q9N0HtMEe6E-ugEih418Q" incoming="_3IHQUHtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_6GuWgHtMEe6E-ugEih418Q" name="MergeNode2" outgoing="_AeOrIHtNEe6E-ugEih418Q _WplTAHtNEe6E-ugEih418Q" incoming="_8q9N0HtMEe6E-ugEih418Q"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_90JqgHtMEe6E-ugEih418Q" name="Neuspesna kupovina" incoming="_AeOrIHtNEe6E-ugEih418Q"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_Pv9IwHtNEe6E-ugEih418Q" name="Prijavljivanje na aplikaciju" outgoing="_PwkXUHtOEe6E-ugEih418Q" incoming="_WplTAHtNEe6E-ugEih418Q"/>
+  </packagedElement>
+</uml:Model>

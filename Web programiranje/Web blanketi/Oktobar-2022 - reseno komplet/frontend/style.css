@@ -1,0 +1,74 @@
+.naslov{
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+.rezultatiPretrage{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.fotografija{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.body{
+    display: flex;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: row; 
+}
+
+.kriterijumiPretrage{
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr max-content;
+}
+
+.dropdown-ram{
+    margin: 25%;
+}
+
+.pretraga-dugme{
+    grid-area: 4 / 1 / 5 / 3;
+    margin-top: 10%;
+    width: fit-content;
+    text-align: center;
+    justify-self: center; /* Horizontalo centriranje */
+    align-self: center; /* Vertikalno centriranje */
+}
+
+.margin-10{
+    width: fit-content;
+    margin: 10px;
+    justify-self: right;
+}
+
+.margin-lbl{
+    margin: 10px;
+}
+
+.kupi-dugme{
+    width: 100%;
+}
+
+.rezultatiPretrage{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

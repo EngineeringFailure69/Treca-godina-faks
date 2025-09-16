@@ -1,0 +1,48 @@
+body{
+    display: flex;
+}
+
+.bodyContainer{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.kriterijumiPretrage{
+    width: 400px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    height: fit-content;
+}
+
+.rezultatiPretrage{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.margin-10{
+    margin: 10px;
+}
+
+.pretraga-dugme{
+    grid-area: 7 / 1 / 8 /3;
+}
+
+.dostava {
+    border: 1px solid black; 
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.isporuci-dugme{
+    width: 100%;
+}
+
+.slika-automobila{
+    width: 400px;
+}

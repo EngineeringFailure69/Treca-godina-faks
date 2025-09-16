@@ -1,0 +1,2 @@
+Odgovor na pitanje u zadatku:
+query string ce izgledati ovako :  ?prvi=5&drugi=15

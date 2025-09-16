@@ -1,0 +1,61 @@
+body{
+    display: flex;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.kriterijumiPretrage{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 5px;
+    gap: 5px;
+}
+
+.tabela{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+/* .margin-10{
+    margin: 5px;
+} */
+
+.rok-checkboxes{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.unosDiv{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 5px;
+}
+
+/* Stil za tabelu */
+.rezultati-tabela {
+    border-collapse: collapse; /* Spaja granice ćelija u jednu liniju */
+    width: 100%; /* Širina tabele da se prilagodi širini kontejnera */
+}
+
+/* Stil za redove tabele */
+.rezultati-tabela th, .rezultati-tabela td {
+    border: 1px solid black; /* Dodaje crnu granicu oko ćelija */
+    padding: 8px; /* Dodaje razmak unutar ćelija */
+    text-align: left; /* Poravnava tekst ulevo */
+}
+
+/* Stil za zaglavlje tabele */
+.rezultati-tabela th {
+    font-weight: bold; /* Podebljava tekst u zaglavlju */
+}

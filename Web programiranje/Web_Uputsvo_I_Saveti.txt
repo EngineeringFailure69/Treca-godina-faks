@@ -1,0 +1,124 @@
+korak1. sqllocaldb instanca
+Ukoliko nije kreirana kreirati je u cmd komandom sqllocaldb create ImeInstance -s
+startujemo instancu koriscenjem komande sqllocaldb start ImeInstance
+sqllocaldb info ImeInstance ako pise State:Running ok je
+
+korak2. kopirati sve iz webtemplejta u novom folderu desni klik open with code
+ctrl + shift + backticks(levo od 1 na tastaturi) otvara terminal
+pisemo dotnet clean , potom dotnet restore da bismo se uverili da je sve lepo kopirano
+
+korak3. otvaramo azure 
+ukoliko nije kreirana konekcija kreirati je 
+u server pisemo (localdb)\ImeInstance (ime instance iz koraka1)
+u name pisemo sta god
+
+korak4. pisanje modela projektovati model pistanjem klasa njihovih propertija, deskriptora, i vezama, 
+moguci deskriptori
+[Range(1 , 10)] - za opseg integera ili unsigned integera
+[MaxLength(20)] - za stringove
+[Key] - za ID
+[Length(3 , 6)] - min , max length stringa
+[Length(3,3)] - string mora da ima 3 karaktera
+[ForeignKey(" ")] - videces dole u tekstu
+[InverseProperty(" ")] -videces dole u tekstu
+
+
+kada zavrsimo sa tim u Contextu dodajemo jedan DbSet za svaku tabelu, 
+potom u appsetings.json menjamo Server i database (kad vezbas samo menjas database i uvek koristis samo jednu sqllocaldb instancu Ispit na taj nacin ces u istoj konekciji imati vise baza)
+postupak ponoviti u appsetings.development.json 
+
+kada sa tim zavrsimo pisemo
+dotnet ef migrations add imeMigracije(uglavno v1 , v2 gde v oznacava version)
+to dodaje novu migraciju ako terminal izbacuje error vezan za migraciju BEZ IKAKVOG MENJANJA KODA pisemo dotnet ef migrations remove
+ako je migracija ok pisemo dotnet ef database update kako bi se migracije primenile na bazu podataka
+
+korak5. Pisanje metoda u controlleru  na sledeci nacin
+[HttpGet] | [HttpPost] | [HttpPut]  (vrati iz baze , ubaci u bazu , promeni u  bazi)
+[Route("/ImeRute")] (ukoliko ne saljemo nista kroz rutu) | [Route("/ImeRute/{param1}/{param2}/{...}")] (ukoliko ih ima
+public async Task<ActionResult> ImeFunkcije(parametri)  (ImeFunkcije MORA biti isto kao i ImeRute u listu parametra mora sadrzati sve parametre koji se nalaze u ruti, ako zelimo da na stranici unosimo objekat koristimo [FromBody] Klasa obj)
+STRUKTURA SVAKE FUNKCIJE:
+{
+try{
+//kod
+return Ok(Odgovarajuca poruka);
+}
+catch(Exception ex){
+         return BadRequest(ex.message);
+}
+moze da vraca mnogo tipa kodova ali najbitniji su Ok - dobra situacija i BadRequest - losa situacija
+
+Context koristimo kao portal izmedju baze i nasih klasa iz modela nad njim sledece funkcije su od interesa
+.AddAsync(objekat) - dodaje vrstu u tabelu koja je tipa objekat
+primer: await Context.Randici.AddAsync(radnik);
+NAPOMENA kad imamo negde async da pise mora await 
+.FindAsync(id) - vraca objekat ako postoji koji ima prosledjeni ID ako ne postoji vraca null
+primer: var radnik = await Context.Randici.FindAsync(randikID);
+.Update - koristi se uz httput dekorator kad hocemo da izvrsimo izmenu recimo:
+var radnik = await Context.Randici.FindAsync(randikID);
+Context.Radnici.Update(radnik);
+NAPOMENA UPDATE I REMOVE IDU BEZ AWAIT
+.Remove brise radnika isti primer kao gore samo sto umesto Update Remove uz HttpDelete ide on
+OBAVEZNO nakon ovih komandi sledece
+await Context.SaveChangesAsync();
+
+
+.Include (Join u bazama) primer: Context.Zaposlen.Include(p => p.Bolnica) include radi samo sa vezanim klasama dakle ako bi context krenuo od lekara ne bi moglo sledece Context.Lekari.Include(p => p.Zaposlen).Include(p=>p.Bolnica) // ne bi moglo ovo bolnica jer Lekari ima vezu samo ka Zaposlen ako bismo hteli ovakav redosled umesto drugog include mora staviti ThenIclude jer u odnosu na zaposleni ukljucujem i bolnicu medjutim ThenInclude ima bocni efekat...
+Sledece metode se mogu koristiti iskljucivo uz .Include
+
+.ThenInclude(Join u bazama , samo sto se fokus menja na includovanu klasu) primer Context.Lekari.Include(p => p.Zaposlen).ThenInclude(p=> p.Bolnica) gde se sada nalazim u bolnici
+.Where (where u bazama) primer:  Context.Zaposlen.Include(p => p.Bolnica).Where(p => p.Bolnica.ID == bolnicaID) 
+.Select (sta zelimo da nam se prikaze u listi) primer:  
+Context.Zaposlen.Include(p => p.Bolnica).Where(p => p.Bolnica.ID == bolnicaID) .Select(p => new{
+DatumPotpisivanjaUgovora,
+Specijalnost
+});
+.
+.SumAsync  - vraca broj u obliku sume primer:
+  var ukupnaPlata = await Context.Radi.Include(p => p.Restoran)
+                                      .Include(p => p.Kuvar)
+                                      .Where(p => p.Kuvar!.ID == kuvarID)
+                                      .SumAsync(p => p.Plata);
+ukupna plata kuvara(radi u vise restorana)
+
+.OrderByDescending - na osnovu necega sortira u opadajuci redosled
+ var kuvar = await Context.Kuvari.Include(p => p.Radi)
+                        .OrderByDescending(p => p.Radi!.Count)
+                        .Select(p => new{
+                            p.Ime,
+                            p.Prezime
+                        }).FirstOrDefaultAsync();
+vraca kuvara koji radi na najvise mesta
+.OrderByAscending - suprotno od descending
+.FirstOrDefaultAsync - umesto liste vraca samo jedan objekat
+.ToListAsync - vraca listu objekata
+
+nakon zavrsetka pisanja JEDNE funkcije pozeljno je proveriti njenu funkcionalnost koriscenjem komande
+dotnet watch run u terminalu
+
+
+to je to sto se tice koraka sada ...
+SPECIFICNA VEZE
+1-1 ako imas takvu situaciju u jednoj od klasa ce veza imati deskriptor [ForeignKey("Naziv FKA")] MORAS TO SAM DA NAVEDES
+
+cudne veze:
+zamisli relacija koja ima polazni grad , grad destinacije i voz kome putuje 
+to bi izgledalo ovako
+public class Relacija {
+      public Voz? Voz { get; set; }
+    public Grad? PolazniGrad { get; set; }
+
+    public Grad? OdredisniGrad { get; set; }
+}
+public class Grad{
+
+    [InverseProperty("PolazniGrad")]
+    public List<Relacija>? RelacijePolaska { get; set; }
+    [InverseProperty("OdredisniGrad")]
+    public List<Relacija>? RelacijeDolaska { get; set; }
+}
+koristi se deskriptor [InverseProperty(imePropertijaizDrugeKlase)] kako bi se naznacilo kako ta veze treba da se realizuje
+recimo... kao u primeru gore
+polazniGrad ima vise RelacijePolaska RelacijePolaska imaju jedan polazni grad
+odredisniGrad ima vise RelacijaDolaska RelacijeDolaska imaju jedan odredisniGrad
+
+new Date().toISOString() - u konzoli na web stranici za datum
