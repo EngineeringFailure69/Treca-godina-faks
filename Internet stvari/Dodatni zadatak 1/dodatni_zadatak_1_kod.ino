@@ -15,7 +15,7 @@ int servoPin = 9;
 
 //Pomocne promenljive
 int clockwiseButtonValue, counterClockwiseButtonValue;
-int pos = 0;
+int pos = 0, stopDistance = 6;
 int minmaxAngle = 180;
 byte ledState = HIGH;
 volatile boolean rotateCW = false, rotateCCW = false;
@@ -66,7 +66,7 @@ void loop()
    {
       measuredDistance = measureDistance(triggerPin, echoPin);
       fifth_seconds = 0;
-      if(measuredDistance < 6)
+      if(measuredDistance < stopDistance)
 	 trenutnoStanjeEkrana = PREPREKA;
       else if(pos >= minmaxAngle && !rotateCW && !cekanje)
 	 trenutnoStanjeEkrana = STOP;
@@ -77,7 +77,7 @@ void loop()
    }
    
    //Smer kazaljke
-   if(rotateCW && currentTime - lastMoveTime >= moveInterval && measuredDistance >= 6)
+   if(rotateCW && currentTime - lastMoveTime >= moveInterval && measuredDistance >= stopDistance)
    {
       lastMoveTime = currentTime;
       pos += step;
@@ -96,7 +96,7 @@ void loop()
    }
    
    //Kontra od kazaljke
-   else if(rotateCCW && currentTime - lastMoveTime >= moveInterval && measuredDistance >= 6)
+   else if(rotateCCW && currentTime - lastMoveTime >= moveInterval && measuredDistance >= stopDistance)
    {
       trenutnoStanjeEkrana = NAZAD;
       lastMoveTime = currentTime;
